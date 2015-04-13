@@ -1,0 +1,58 @@
+h1{
+	color: blue;
+}
+h2{
+	font-size: 14px;
+}
+p{
+	font-size: 12px;
+	color: yellow;
+	background-color: #000;
+}
+img{
+	border: 2px solid red;
+}
+@font-face{ /*导入自定义的字体*/
+	font-family: 'stxingka'; /*定义字体名称*/
+	src:url('../STXINGKA.ttf')  format('truetype'); /*字体路径及类型*/
+	font-weight: normal;
+	font-style: normal;
+}
+.t1{
+	text-indent: 2em; /*首行缩进*/
+}
+.t2{
+	text-transform: uppercase;/*字符全部转换成大写*/
+	text-transform: capitalize;/*capitalize:将每个单词的首字母大写*/
+	text-transform: lowercase;/*字母全部小写*/
+}
+.t3{
+	text-align: center; /*居中显示*/
+	text-align: left;
+	text-align: right;
+}
+.t4{
+	text-decoration: underline; /*下划线*/
+	text-decoration: overline;  /*上划线*/
+	text-decoration: inherit; /*继承父元素的划线方式*/
+	text-decoration: line-through;  /*字中间划线*/
+}
+.w1{
+	word-spacing: 2em;
+}
+.w2{
+	white-space: normal; /*默认方式，会以一个空格连接*/
+	white-space: pre; /*空白被保留，回车、table都保留原有样式*/
+	/*white-space: nowrap;*/ /*不允许文本换行*/
+	/*white-space: pre-wrap;*/ /*保留空白符序列，但是正常地进行换行*/
+	/*white-space: pre-line;*/ /*合并空白符序列，但是保留换行符*/
+	/*white-space: inherit; *//*从父元素继承 white-space 属性的值*/
+	line-height: 2.3em;
+}
+.f1{
+	font-family: 'STXINGka'; /*不区分大小写，自定义的也是*/
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	white-space: pre;
+}
