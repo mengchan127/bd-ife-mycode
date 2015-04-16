@@ -1,10 +1,16 @@
+html,body{
+		font-family: "Microsoft Yahei",Arial, sans-serif;
+		font-size: 14px;
+		height: 100%;
+		/*margin:0;*/
+}
 h1{
 	color: blue;
 }
 h2{
 	font-size: 14px;
 }
-p{
+#task2{
 	font-size: 12px;
 	color: yellow;
 	background-color: #000;
@@ -13,8 +19,13 @@ img{
 	border: 2px solid red;
 }
 @font-face{ /*导入自定义的字体*/
-	font-family: 'stxingka'; /*定义字体名称*/
-	src:url('../STXINGKA.ttf')  format('truetype'); /*字体路径及类型*/
+	font-family: 'single_maltaregular';
+	src: url('../font/singlemalta-webfont.eot');
+	src: url('../font/singlemalta-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/singlemalta-webfont.woff2') format('woff2'),
+	     url('../font/singlemalta-webfont.woff') format('woff'),
+	     url('../font/singlemalta-webfont.ttf') format('truetype'),
+	     url('../font/singlemalta-webfont.svg#single_maltaregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -27,9 +38,9 @@ img{
 	text-transform: lowercase;/*字母全部小写*/
 }
 .t3{
-	text-align: center; /*居中显示*/
 	text-align: left;
 	text-align: right;
+	text-align: center; /*居中显示*/
 }
 .t4{
 	text-decoration: underline; /*下划线*/
@@ -50,9 +61,164 @@ img{
 	line-height: 2.3em;
 }
 .f1{
-	font-family: 'STXINGka'; /*不区分大小写，自定义的也是*/
+	font-family: 'single_maltaregular'; /*不区分大小写，自定义的也是*/
+	font-size: 20px;
+	/*font-weight: bold;
+	line-height: 1.5;
+	white-space: pre;*/
+
+}
+.task601{
+	background-color: red;
+	width: 960px;
+}
+
+/*圆角矩形*/
+.round_corner{
+	width: 20%;
+	margin:10px auto;
+	height: 10%;
+}
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{
+	height: 1px;
+	overflow: hidden;
+	display:block;
+}
+.b1, .b8{
+	margin:0 5px;
+}
+.b2, .b7{
+	margin:0 3px;
+	border-left: 2px solid;
+	border-right: 2px solid;
+}
+.b3, .b6{
+	margin:0 2px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+.b4, .b5{
+	margin:0 1px;
+	border-left: 1px solid;
+	border-right:1px solid;
+	height: 2px;
+}
+.round_corner .content{
+	overflow: hidden;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	height:80%;
+	text-align: center;
+}
+/*可以设置边框颜色*/
+.colors .b2,.colors .b3,.colors .b4,.colors .b5,.colors .b6,.colors .b7,.colors .content {
+	border-color: #333;
+}
+.colors .b1, .colors .b8{
+	background-color: #333;
+}
+
+/*两列布局*/
+.container{
+	width: 55%;
+	height: 400px;
+	margin:20px auto;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 1.5;
-	white-space: pre;
+}
+.div_A{
+	width: 300px;
+	background-color: red;
+	height: 60%;
+	float: left;
+}
+.div_B{
+	background-color: blue;
+	height: 70%;
+	margin-left: 300px;
+}
+.div_C{
+	background-color: yellow;
+	height: 30%;
+}
+#div_red{
+	background-color: red;
+	width: 200px;
+	height: 60%;
+	float: left;
+}
+#div_blue{
+	background-color: blue;
+	height: 70%;
+	overflow: hidden; /*这种方式也可以，闭合浮动*/
+}
+#div_yellow{
+	background-color: yellow;
+	height: 30%;
+}
+
+/*三列布局*/
+.mid_wrapper{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+#div_l{
+	background-color: pink;
+	width: 150px;
+	height: 90%;
+	float: left;
+	margin-left: -100%;
+}
+#div_m{
+	background-color: #A3FF66;
+	height: 100%;
+	margin-right: 150px;
+	margin-left: 150px;
+
+}
+#div_r{
+	background-color: #FFFF66;
+	width: 150px;
+	height: 90%;
+	float: left;
+	margin-left: -150px;
+}
+
+/***************/
+#div_l_1{
+	background-color: pink;
+	width: 200px;
+	height: 90%;
+	float: left;
+	/*overflow: hidden;*/
+}
+#div_m_1{
+	background-color: #A3FF66;
+	height: 100%;
+	margin: 0 200px;
+}
+#div_r_1{
+	background-color: #FFFF66;
+	width: 200px;
+	height: 90%;
+	float: right;
+	/*overflow: hidden;*/
+}
+
+/*浮动布局*/
+.wrapper{
+	width: 55%;
+	height: 660px;
+	background-color: red;
+	margin:10px auto;
+	padding: 10px;
+	overflow: hidden;
+}
+.blue_box{
+	width: 300px;
+	height: 150px;
+	background-color: blue;
+	margin:5px;
+	float: left;
 }
