@@ -1,0 +1,251 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: "宋体";
+	font-size: 12px;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: #522A5C;
+	/*overflow: hidden; */
+}
+#github-icon{
+width: 30px;
+height: 34px;
+background-image: url(../img/icon-github.png);
+float: right;
+margin-right: 10px;
+margin-top: 46px;
+cursor: pointer;
+}
+.topnav{
+	width: 980px;
+	margin: 0 auto;
+}
+.topnav h1{
+	color: #FFF;
+	font-family: Arial;
+	font-weight: normal;
+	margin:0;
+	margin-top: 15px;
+	float: left;
+}
+.topnav ul{
+	float: right; /*加上这句，既保证了列表向右浮动，内部li向左浮动，做到展现与DOM中的顺序一致*/
+	height: 50px;
+	margin-top: 25px;
+}
+.topnav li{
+	list-style: none;
+	float: left;
+	font:14px;
+	margin-left: 28px;
+}
+.topnav a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+.topnav a:hover{
+	color: #FCADAD;
+}
+
+.cover{
+	width: 100%;
+	height: 525px;
+	background-image: url(../img/banner-bg.jpg);
+	background-size: cover;
+}
+.cover-wrap{
+	width: 980px;
+	margin:0 auto;
+	height: 525px;
+}
+.cover-article{
+	width: 360px;
+	padding: 10px 10px 30px;
+	position: relative;
+	left: 600px;
+	top:400px;
+	background:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0)), color-stop(0.75, rgba(255,255,255,0.5)));
+	filter:alpha(opacity=70 finishopacity=50 startx=0,finishx=100,starty=0,finishy=75) progid:DXImageTransform.Microsoft.gradient(startColorstr=white,endColorstr=white,gradientType=0);
+	filter:alpha(opacity=50 finishopacity=0 startx=0,finishx=100,starty=75,finishy=100) progid:DXImageTransform.Microsoft.gradient(startColorstr=white,endColorstr=white,gradientType=0);
+}
+.cover-title{
+	font-size: 14px;
+	margin-bottom: 12px;
+	text-align: right;
+	color: #fff;
+}
+.cover-content{
+	font-size: 12px;
+	line-height: 1.5;
+	text-indent: 2em;
+	color: #fff;
+}
+
+.container{
+	background-color:#EEEEEE;
+	height: 480px;
+}
+.blog-wrap{
+	width: 1000px;
+	margin:0 auto;
+	background: #EEEEEE;
+}
+/*.blog{
+	width: 320px;
+	background: #FFF;
+	float: left;
+	margin-top:10px;
+	text-align: center;
+}
+.blog img{
+	width: 300px;
+	height: 180px;
+	margin-top:10px;
+}*/
+.blog-wrap td{
+	width: 320px;
+	background: #FFF;
+	margin-bottom: 25px;
+	text-align: center;
+	vertical-align: top;
+	/*border:1px solid red;*/
+	/*margin:0;*/
+	border: 0;
+}
+tr{
+	border: 1px solid red;
+}
+.blog-wrap img{
+	width: 300px;
+	height: 180px;
+	margin-top:10px;
+}
+.blog-content{
+	text-align: left;
+	text-indent: 2em;
+	font-size: 12px;
+	line-height: 1.7;
+	padding-left:30px;
+	padding-right: 30px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.blog-content p{
+	margin:0;
+}
+
+.wrap{
+	/*width: 100*/
+	height: 520px;
+}
+.headimg{
+	margin:0 auto;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top:-50px;
+}
+.wrap h1{
+	margin:0;
+	text-align: center;
+	font-family: Century Gothic;
+	font-size: 20px;
+	font-weight: normal;
+}
+.self-intro{
+	width: 600px;
+	margin:0 auto;
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 1.7;
+	text-indent: 2em;
+}
+
+.footer{
+	width: 100%;
+	height: 395px;
+	background: #000;
+	color:#FFF;
+	overflow: hidden;
+}
+.footer-ul{
+	width: 200px;
+	height: 35px;
+	margin:0 auto;
+}
+.footer-li{
+	list-style: none;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	width: 50px;
+}
+.navs{
+	width: 980px;
+	height: 280px;
+	margin:0 auto;
+}
+.navs ul{
+	float: left;
+	padding: 0;
+	margin-right: 130px;
+}
+.navs li{
+	list-style: none;
+	height: 20px;
+	line-height: 20px;
+}
+.navs a{
+	color: #FFF;
+	text-decoration:none;
+}
+.navs a:hover{
+	text-decoration:underline;
+}
+.copyright{
+	width: 980px;
+	height: 80px;
+	margin:0 auto;
+	text-align: center;
+}
+#github-icon1{
+	width: 30px;
+	height: 34px;
+	background-image: url(../img/icon-github.png);
+	margin:0 auto;
+	margin-top: 19px;
+}
+
+
+
+
+@media screen and (max-width: 980px){
+	#github-icon{
+		display: none;
+	}
+	.header{
+		width: 980px;
+	}
+	.cover{
+		width: 980px;
+	}
+	.footer{
+		width: 980px;
+	}
+	.container{
+		width: 980px;
+	}
+	.wrap{
+		width: 980px;
+	}
+	.blog-wrap{
+		width: 980px;
+	}
+}
