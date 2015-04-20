@@ -1,0 +1,381 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: "宋体";
+	font-size: 12px;
+	background: #EEEEEE;
+}
+/*.container{
+	width: 100%;
+	border: 1px solid red;
+}*/
+@media screen and (max-width: 980px){
+	.container{
+		width: 980px;
+	}
+	#github-icon{
+		display: none;
+	}
+	.labels-wrap{
+		display: none;
+	}
+}
+a{ text-decoration: none;}
+li{ list-style: none; }
+.header{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: #522A5C;
+}
+#github-icon{
+width: 30px;
+height: 34px;
+background-image: url(../img/icon-github.png);
+float: right;
+margin-right: 10px;
+margin-top: 46px;
+cursor: pointer;
+}
+.topnav{
+	width: 980px;
+	margin: 0 auto;
+}
+.topnav h1{
+	color: #FFF;
+	font-family: Arial;
+	font-weight: normal;
+	margin:0;
+	margin-top: 15px;
+	float: left;
+}
+.topnav ul{
+	float: right; /*加上这句，既保证了列表向右浮动，内部li向左浮动，做到展现与DOM中的顺序一致*/
+	height: 50px;
+	margin-top: 25px;
+}
+.topnav li{
+	list-style: none;
+	float: left;
+	font:14px;
+	margin-left: 28px;
+}
+.topnav a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+.topnav a:hover{
+	color: #FCADAD;
+}
+
+.wrapper{
+	width: 980px;
+	height: 1525px;
+	margin:0 auto;
+	padding-top: 20px;
+}
+.blog-list{
+	width: 710px;
+	float: left;
+}
+.labels-wrap{
+	position: absolute; 
+	left:-50px;
+	top:20px;
+}
+.labels{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	font-family: Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+.blog{
+	width: 670px;
+	height: 340px;
+	background: #FFF;
+	margin-bottom: 10px;
+	padding: 15px 20px;
+	position: relative;
+}
+.blog h3{
+	margin:5px 0;
+	color:#A660B7;
+	font-size: 16px;
+}
+.blog h4{
+	margin:10px 0;
+	color: #666;
+	font-size: 12px;
+}
+.content{
+	height: 265px;
+	overflow: hidden;
+}
+.content p{
+	text-indent: 2em;
+	line-height: 1.7;
+	margin:0;
+	padding:0;
+}
+.edit-info{
+	height: 20px;
+	line-height: 20px;
+	color: #999999;
+	text-align: right;
+	/*border: 1px solid blue*/
+}
+
+
+.side-wrapper{
+	width: 260px;
+	/*border: 1px solid blue;*/
+	float: right;
+}
+ul,li{
+	list-style: none;
+}
+.search-wrapper{
+	height: 80px;
+	background: #FFF;
+}
+.search{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.search ul{
+	width: 220px;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	margin: 0px auto;
+	padding: 0;
+}
+.search li{
+	float: left;
+	height: 40px;
+	margin:0;
+}
+#search-icon{
+	width: 45px;
+	height: 40px;
+	background: url(../img/search.png);
+}
+.search input{
+	color: #999999;
+	width: 120px;
+	font-size: 14px;
+	line-height: 37px;
+	margin:0;
+	border:0;
+	padding-left: 5px;
+	outline: none;
+}
+.search span{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	background: #DDDDDD;
+	display: block;
+	text-align: center;
+	font-size: 23px;
+	/*font-weight: bold;*/
+	font-family: Arial;
+	cursor: pointer;
+}
+
+.sort-wrapper{
+	height:200px;
+	/*border: 1px solid green;*/
+}
+.sort-wrapper ul{
+	padding: 0;
+	border-top:1px solid #DDDDDD;
+}
+.sort-wrapper li{
+	height: 48px;
+	line-height: 48px;
+	background: #FFF;
+	border-bottom: 1px solid #DDDDDD;
+}
+.sort-wrapper a{
+	display: block;
+	height: 48px;
+	text-decoration: none;
+	color: #666666;
+	background: #FFF;
+	font-size: 16px;
+	border-left: 5px solid #DFC6E6;
+	padding-left:20px;
+}
+.sort-wrapper a:hover, a:active{
+	border-left: 5px solid #522A5c;
+}
+.calendar{
+	/*height: 240px;*/
+	background: #FFF;
+	margin-top: 10px;
+	/*padding:20px;*/
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+.calendar table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	color:#999;
+	margin:0 auto;
+}
+.calendar caption{
+	/*display: table-caption;*/
+	text-align: center;
+	font-weight: bold;
+	color: #773C88;
+	letter-spacing: 3px;
+	font-size: 14px;
+}
+.calendar caption a{
+	text-decoration: none;
+}
+.calendar tr{
+	border-bottom: 1px solid #DDDDDD;
+	height: 35px;
+}
+.calendar th{
+	font-weight: normal;
+}
+.calendar td{
+	width: 31px;
+	text-align: center;
+}
+.calendar td a{
+	width: 28px;
+	height: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	display: block;
+	color:#999;
+}
+.calendar td a:hover{
+	color: #FFF;
+	background: #773C88;
+}
+
+.tags-wrap{
+	height: 160px;
+	padding: 10px 15px;
+	background: #FFF;
+	margin-top: 15px;
+	color:#773C88;
+	font-family: Arial;
+	overflow: hidden;
+}
+.tags-wrap h3{
+	font-weight: normal;
+	font-family: Arial;
+	margin-top:0;
+	color: #666;
+}
+.tags{
+	margin-right: -10px;
+}
+.tags span{
+	margin-right: 5px;
+}
+
+.page-nav{
+	clear: both;
+	width: 710px;
+	padding: 0;
+}
+.page-nav ul{
+	padding: 0;
+	width: 550px;
+	margin:0 auto;
+	
+	overflow: hidden;
+
+
+}
+.page-nav li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	background: #FFF;
+	margin:0 5px;
+}
+.page-nav a{
+	color:#000;
+	display: block;
+	padding: 0 15px;
+}
+.page-nav a:hover{
+	color: #FFF;
+	background: #A660B7;
+}
+#noclick{
+	color:#666;
+}
+#noclick:hover{
+	color: #666;
+	background: #FFF;
+	font-weight: normal;
+}
+
+.footer{
+	width: 100%;
+	height: 395px;
+	background: #000;
+	color:#FFF;
+	overflow: hidden;
+}
+.footer-ul{
+	width: 200px;
+	height: 35px;
+	margin:0 auto;
+}
+.footer-li{
+	list-style: none;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	width: 50px;
+}
+.navs{
+	width: 980px;
+	height: 280px;
+	margin:0 auto;
+}
+.navs ul{
+	float: left;
+	padding: 0;
+	margin-right: 130px;
+}
+.navs li{
+	list-style: none;
+	height: 20px;
+	line-height: 20px;
+}
+.footer a{
+	color: #FFF;
+	text-decoration:none;
+}
+.navs a:hover{
+	text-decoration:underline;
+}
+.copyright{
+	width: 980px;
+	height: 80px;
+	margin:0 auto;
+	text-align: center;
+}
+#github-icon1{
+	width: 30px;
+	height: 34px;
+	background-image: url(../img/icon-github.png);
+	margin:0 auto;
+	margin-top: 19px;
+}
