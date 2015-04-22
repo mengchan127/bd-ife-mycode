@@ -121,6 +121,11 @@ cursor: pointer;
 	margin-right: 10px;
 }
 .waterfall-left > div{	margin-bottom: 10px; position: relative; }
+.waterfall-left-left div{ cursor: pointer; }
+.waterfall-left-right div{ cursor: pointer; }
+.waterfall-right-left div{ cursor: pointer; }
+.waterfall-right-right div{ cursor: pointer; }
+#l-img1{ cursor: pointer; }
 
 .waterfall-left-left{
 	width: 160px;
@@ -316,6 +321,7 @@ form{
 	line-height: 18px;
 	margin-top: 12px;
 }
+.ranking-wrap li a{ color:#000; }
 .order{
 	width: 15px;
 	height: 15px;

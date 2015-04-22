@@ -3,6 +3,7 @@ html,body{
 	margin: 0;
 	font-family: "宋体";
 	font-size: 12px;
+	background: #EEEEEE;
 }
 .header{
 	width: 100%;
@@ -68,7 +69,7 @@ cursor: pointer;
 .cover-wrap{
 	width: 980px;
 	margin:0 auto;
-	position: relative;
+	position: relative; /*通过层布局让banner图片置底*/
 }
 .cover-article{
 	width: 360px;
@@ -97,35 +98,57 @@ cursor: pointer;
 	color: #fff;
 }
 
-.container{
+.content-wrap{
 	background-color:#EEEEEE;
 	height: 480px;
 }
-.blog-wrap{
+.content ul{ padding: 0; margin:0;}
+.content{
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content li{
+	float: left;
+	list-style: none;
+	width: 320px;
+	background: #FFF;
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 500px;
+	margin-bottom: -500px;
+
+}
+.content li~li{
+	margin-left: 10px;
+}
+.content img{
+	width: 300px;
+	height: 180px;
+}
+.description{
+	padding: 10px 30px 25px;
+}
+.description p{
+	margin:0;
+	text-align: left;
+	text-indent: 2em;
+	line-height: 1.7;
+}
+
+/*table实现三列等高的样式*/
+/*.blog-wrap{
 	width: 1000px;
 	margin:0 auto;
 	background: #EEEEEE;
 }
-/*.blog{
-	width: 320px;
-	background: #FFF;
-	float: left;
-	margin-top:10px;
-	text-align: center;
-}
-.blog img{
-	width: 300px;
-	height: 180px;
-	margin-top:10px;
-}*/
 .blog-wrap td{
 	width: 320px;
 	background: #FFF;
 	margin-bottom: 25px;
 	text-align: center;
 	vertical-align: top;
-	/*border:1px solid red;*/
-	/*margin:0;*/
 	border: 0;
 }
 tr{
@@ -148,11 +171,11 @@ tr{
 }
 .blog-content p{
 	margin:0;
-}
+}*/
 
-.wrap{
-	/*width: 100*/
+.intro-wrap{
 	height: 520px;
+	background: #FFF;
 }
 .headimg{
 	margin:0 auto;
@@ -163,7 +186,7 @@ tr{
 	position: relative;
 	top:-50px;
 }
-.wrap h1{
+.intro-wrap h1{
 	margin:0;
 	text-align: center;
 	font-family: Century Gothic;
@@ -233,9 +256,6 @@ tr{
 	margin:0 auto;
 	margin-top: 19px;
 }
-
-
-
 
 @media screen and (max-width: 980px){
 	#github-icon{

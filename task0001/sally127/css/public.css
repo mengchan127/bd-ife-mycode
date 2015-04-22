@@ -13,7 +13,7 @@ html,body{
 		display: none;
 	}
 }
-a{ text-decoration: none; outline: none;}
+a{ text-decoration: none; outline: none; color: #000;}
 li{ list-style: none; }
 input{ outline: none; }
 ul{ padding: 0; }
@@ -22,6 +22,8 @@ ul{ padding: 0; }
 	height: 80px;
 	line-height: 80px;
 	background-color: #522A5C;
+	overflow: hidden;
+	position: relative;
 }
 #github-icon{
 width: 30px;
